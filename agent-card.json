@@ -1,0 +1,76 @@
+{
+  "name": "grabhire",
+  "description": "UK grab-lorry marketplace + driver recruitment.",
+  "url": "https://grabhire.ai",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "recruitment-ai-mcp",
+      "name": "recruitment-ai-mcp",
+      "description": "Tool: recruitment-ai-mcp (part of grabhire.ai hive L5)"
+    },
+    {
+      "id": "resume-parser-ai-mcp",
+      "name": "resume-parser-ai-mcp",
+      "description": "Tool: resume-parser-ai-mcp (part of grabhire.ai hive L5)"
+    },
+    {
+      "id": "lead-scoring-ai-mcp",
+      "name": "lead-scoring-ai-mcp",
+      "description": "Tool: lead-scoring-ai-mcp (part of grabhire.ai hive L5)"
+    },
+    {
+      "id": "muckaway-ai-mcp",
+      "name": "muckaway-ai-mcp",
+      "description": "Tool: muckaway-ai-mcp (part of grabhire.ai hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'grabhire'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://grabhire.ai/oauth/authorize",
+          "tokenUrl": "https://grabhire.ai/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": true,
+    "currency": "USD",
+    "amount": "0.05",
+    "freeCallsPerIPPerDay": "1"
+  }
+}
