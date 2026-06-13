@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "grabhire",
+    "description": "UK grab-lorry marketplace + driver recruitment.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://grabhire.ai"
+      }
+    ],
+    "capabilities": [
+      "recruitment-ai-mcp",
+      "resume-parser-ai-mcp",
+      "lead-scoring-ai-mcp",
+      "muckaway-ai-mcp",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
