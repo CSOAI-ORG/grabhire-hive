@@ -1,0 +1,35 @@
+{
+  "name": "wcr-grab-hire.ai",
+  "title": "WCR Grab Hire — Grab Lorry Services",
+  "description": "On-demand grab lorry hire with AI dispatch, route optimisation, and real-time waste tracking.",
+  "cluster": "INDUSTRY",
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://wcr-grab-hire.ai/",
+  "agent": {
+    "protocol": "model-context-protocol",
+    "version": "1.0",
+    "mcp_endpoint": "https://mcp.wcr-grab-hire.ai/v1",
+    "capabilities": ["reasoning", "tool_use", "context_management", "multi_agent_coordination"],
+    "authentication": {
+      "scheme": "oauth2",
+      "token_url": "https://auth.sov3.meok.ai/oauth/token",
+      "authorization_url": "https://auth.sov3.meok.ai/oauth/authorize",
+      "scopes": ["agent:read", "agent:write", "mcp:invoke"]
+    },
+    "identity": {
+      "did": "did:meok:wcr-grab-hire.ai",
+      "verification_method": "did:meok:wcr-grab-hire.ai#keys-1"
+    }
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "MEOK Empire",
+    "url": "https://meok.ai/"
+  },
+  "clusterOf": {
+    "@type": "Organization",
+    "name": "INDUSTRY",
+    "url": "https://wcr-grab-hire.ai/"
+  }
+}

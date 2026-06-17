@@ -1,0 +1,14 @@
+{
+  "name": "wcr-grab-hire.ai",
+  "title": "WCR Grab Hire — Grab Lorry Services",
+  "description": "On-demand grab lorry hire with AI dispatch, route optimisation, and real-time waste tracking.",
+  "cluster": "INDUSTRY",
+  "servers": [
+        { "id": "dispatch-mcp.sov3.meok.ai", "url": "https://dispatch-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "grab-mcp.sov3.meok.ai", "url": "https://grab-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "waste-track-mcp.sov3.meok.ai", "url": "https://waste-track-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}
